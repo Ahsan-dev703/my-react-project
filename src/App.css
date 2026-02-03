@@ -1,0 +1,42 @@
+:root {
+  /* Core Palette (Consolidated) */
+  --color-dark-brown: 29, 29, 27;
+  --color-white: 252, 252, 252;
+  --color-black: 29, 29, 27;
+  --color-accent: 247, 188, 88; /* The yellow/orange color */
+  --color-gray-light: 232, 230, 230;
+  --color-gray-med: 199, 199, 199;
+  --color-gray-dark: 89, 89, 89;
+
+  /* Button Styles */
+  --wst-button-color-fill-primary: rgb(var(--color-accent));
+  --wst-button-color-border-primary: rgb(var(--color-accent));
+  --wst-button-color-text-primary: rgb(var(--color-white));
+  --wst-button-color-fill-primary-hover: rgb(var(--color-white));
+  --wst-button-color-border-primary-hover: rgb(var(--color-accent));
+  --wst-button-color-text-primary-hover: rgb(var(--color-accent));
+  --wst-button-color-fill-primary-disabled: rgb(var(--color-gray-med));
+
+  /* Backgrounds & Text */
+  --wst-color-fill-background-primary: rgb(252, 252, 252);
+  --wst-color-text-primary: rgb(var(--color-black));
+  --wst-color-text-secondary: rgb(var(--color-gray-dark));
+  --wst-color-title: rgb(var(--color-black));
+  --wst-color-line: rgb(var(--color-gray-light));
+
+  /* Font Stacks */
+  --font-heading:
+    normal normal normal 1.4em arial, "ms pgothic", dotum, helvetica, sans-serif;
+  --font-body: normal normal normal 1.4em helvetica-w01-roman, sans-serif;
+
+  /* Semantic Typography */
+  --wst-font-style-h2: 36px var(--font-heading);
+  --wst-font-style-h3: 38px var(--font-heading);
+  --wst-font-style-h4: 35px var(--font-heading);
+  --wst-font-style-body-medium: 16px var(--font-body);
+  --wst-font-style-body-small: 14px var(--font-body);
+
+  /* Layout Helpers */
+  --site-width: 980px;
+  -webkit-font-smoothing: antialiased;
+}
