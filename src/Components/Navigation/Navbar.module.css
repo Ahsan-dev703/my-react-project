@@ -10,11 +10,11 @@
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 1rem;
 }
 
 .topBar img {
@@ -47,16 +47,9 @@
 .nav :global(.active) {
   color: rgb(var(--color-black));
   background-color: rgb(var(--color-white));
-
 }
 
-/* ===================== Menu Icon ===================== */
-.menu_iocn {
-  display: none;
-  cursor: pointer;
-}
-
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   .menu_iocn {
     display: block;
     color: white;
@@ -64,17 +57,19 @@
 
   .nav {
     position: absolute;
-    top: 72px;
+    top: 100px;
     left: 0;
     width: 100%;
     background-color: rgb(var(--color-dark-brown));
     flex-direction: column;
-    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
     padding: 0 1rem;
   }
 
   .nav.show {
-    display: flex;
+    max-height: 500px;
   }
 
   .topBar {
